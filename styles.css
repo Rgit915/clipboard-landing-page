@@ -193,7 +193,6 @@ footer ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  padding: 2rem;
 }
 
 footer ul li {
@@ -221,4 +220,143 @@ footer .social-media {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+}
+.social-media a svg {
+  width: 24px;
+  height: 24px;
+  fill: var(--color-primary-dark-grayish-blue);
+}
+
+/*Media Queries */
+
+@media (min-width: 768px) {
+  body {
+    font-size: 20px;
+  }
+
+  header {
+    background-image: url(./images/bg-header-desktop.png);
+  }
+
+  h2 {
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+    letter-spacing: -0.64px;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    letter-spacing: -0.46px;
+  }
+
+  p {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    letter-spacing: 0.24px;
+  }
+
+  .intro {
+    padding: 2rem;
+  }
+
+  .download-buttons {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 6rem;
+  }
+
+  .features > div:last-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: left;
+    gap: 2rem;
+    margin: 2rem 0;
+    position: relative;
+  }
+
+  .features > div:last-child > div {
+    margin-left: 22rem;
+  }
+
+  .features > div:last-child > img {
+    position: absolute;
+    max-width: 24rem;
+    top: -3%;
+    left: -12%;
+  }
+  .features .feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .features .feature-item p {
+    text-align: left;
+  }
+  .access-clipboard > div:last-child > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    align-items: stretch;
+  }
+  .access-clipboard .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    height: 100%;
+  }
+  .company-icons > div {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3rem;
+    margin: 4rem 0;
+  }
+  .downloads {
+    margin: 4rem 0;
+  }
+  footer {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  footer nav {
+    margin: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    text-align: left;
+  }
+  footer nav li {
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  @media (min-width: 1024px){
+    .intro {
+      max-width: 730px;
+    }
+    .features > div:first-child {
+      max-width: 730px;
+    }
+    .features > div:last-child > div {
+      margin-left: 32rem;
+    }
+    .features > div:last-child > img {
+      position: absolute;
+      max-width: 32rem;
+    }
+    .access-clipboard > div:first-child > p {
+      padding: 1rem 6rem;
+    }
+    .downloads {
+      margin: 4rem 9rem;
+  }
+
+    footer nav {
+      gap: 7rem;
+    }
+  }
 }
