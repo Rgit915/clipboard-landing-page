@@ -114,6 +114,11 @@ p {
   text-decoration: none;
   transition: background-color 0.3s ease, color 0.3s ease;
   text-align: center;
+  cursor: pointer;
+}
+
+.download-buttons .button:hover {
+  opacity: 0.7;
 }
 
 .download-buttons .ios {
@@ -208,6 +213,9 @@ footer ul li a {
   letter-spacing: 0.14px;
   text-align: center;
 }
+footer ul li a:hover {
+  color: var(--color-primary-strong-cyan);
+}
 
 footer > img {
   width: 55px;
@@ -225,6 +233,9 @@ footer .social-media {
   width: 24px;
   height: 24px;
   fill: var(--color-primary-dark-grayish-blue);
+}
+.social-media a:hover svg {
+  fill: var(--color-primary-strong-cyan);
 }
 
 /*Media Queries */
@@ -257,7 +268,7 @@ footer .social-media {
   }
 
   .intro {
-    padding: 2rem;
+    max-width: 700px;
   }
 
   .download-buttons {
@@ -295,6 +306,10 @@ footer .social-media {
   .features .feature-item p {
     text-align: left;
   }
+  .access-clipboard > div:first-child > p {
+    max-width: 874px;
+  }
+
   .access-clipboard > div:last-child > div {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -317,6 +332,7 @@ footer .social-media {
   }
   .downloads {
     margin: 4rem 0;
+    max-width: 740px;
   }
   footer {
     flex-direction: row;
@@ -334,7 +350,7 @@ footer .social-media {
     padding: 0;
   }
 
-  @media (min-width: 1024px){
+  @media (min-width: 1200px) {
     .intro {
       max-width: 730px;
     }
@@ -348,12 +364,10 @@ footer .social-media {
       position: absolute;
       max-width: 32rem;
     }
-    .access-clipboard > div:first-child > p {
-      padding: 1rem 6rem;
-    }
+
     .downloads {
       margin: 4rem 9rem;
-  }
+    }
 
     footer nav {
       gap: 7rem;
