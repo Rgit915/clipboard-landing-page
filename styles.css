@@ -293,9 +293,9 @@ footer .social-media {
 
   .features > div:last-child > img {
     position: absolute;
-    max-width: 24rem;
+    max-width: 26rem;
     top: -3%;
-    left: -12%;
+    left: -15%;
   }
   .features .feature-item {
     display: flex;
@@ -358,13 +358,16 @@ footer .social-media {
       max-width: 730px;
     }
     .features > div:last-child > div {
-      margin-left: 32rem;
+      margin-left: 25rem;
     }
     .features > div:last-child > img {
       position: absolute;
-      max-width: 32rem;
+      max-width: 40rem;
+      left: -45%;
     }
-
+    .features .feature-item p {
+      max-width: 435px;
+    }
     .downloads {
       margin: 4rem 9rem;
     }
