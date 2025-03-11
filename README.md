@@ -21,7 +21,7 @@ Users should be able to:
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
 
-### Screenshots
+### Screenshot
 
 ![Clipboard landing page Desktop preview](https://github.com/Rgit915/clipboard-landing-page/blob/master/screenshots/clipboard-landing-page-desktop-solution-preview.png)
 ![Clipboard landing page Mobile preview](https://github.com/Rgit915/clipboard-landing-page/blob/master/screenshots/clipboard-landing-page-mobile-solution-preview.png)
